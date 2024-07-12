@@ -14,21 +14,20 @@ public class InventoryController {
     @Autowired
     private InventoryService inventoryService;
 
-    @ApiOperation("扣减库存sale，一次卖一个")
-    @GetMapping(value = "/inventory/sale")
-    public String sale()
-    {
-        return inventoryService.sale();
-    }
-
-
-//    @ApiOperation("扣减库存，一次卖一个")
+//    @ApiOperation("扣减库存sale，一次卖一个")
 //    @GetMapping(value = "/inventory/sale")
-////    @ApiOperation("扣减库存saleByRedisson，一次卖一个")
-////    @GetMapping(value = "/inventory/saleByRedisson")
-//    public String saleByRedisson()
+//    public String sale()
 //    {
 //        return inventoryService.sale();
-////        return inventoryService.saleByRedisson();
 //    }
+
+
+    @ApiOperation("扣减库存，一次卖一个")
+    @GetMapping(value = "/inventory/sale")
+//    @ApiOperation("扣减库存saleByRedisson，一次卖一个")
+//    @GetMapping(value = "/inventory/saleByRedisson")
+    public String saleByRedisson()
+    {
+        return inventoryService.saleByRedisson();
+    }
 }
