@@ -1,11 +1,11 @@
-package org.rockyshen;
+package com.rockyshen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RedisDistributedLockApp7777 {
+public class InventoryServiceApplication8888 {
     public static void main(String[] args) {
-        SpringApplication.run(RedisDistributedLockApp7777.class);
+        SpringApplication.run(InventoryServiceApplication8888.class, args);
     }
 }

@@ -13,12 +13,12 @@
     </parent>
 
     <groupId>org.rockyshen</groupId>
-    <artifactId>redis-part</artifactId>
+    <artifactId>microservice-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>redis_distributed_lock2</module>
-        <module>redis_distributed_lock3</module>
+        <module>inventory_service_7777</module>
+        <module>inventory_service_8888</module>
     </modules>
 
     <properties>

@@ -1,4 +1,4 @@
-package org.rockyshen.mylock;
+package com.rockyshen.mylock;
 
 import cn.hutool.core.util.IdUtil;
 import org.springframework.beans.factory.annotation.Autowired;

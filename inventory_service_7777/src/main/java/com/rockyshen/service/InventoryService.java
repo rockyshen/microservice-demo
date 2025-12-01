@@ -1,8 +1,8 @@
-package org.rockyshen.service;
+package com.rockyshen.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.rockyshen.mylock.DistributedLockFactory;
-import org.rockyshen.mylock.RedisDistributedLock;
+import com.rockyshen.mylock.DistributedLockFactory;
+import com.rockyshen.mylock.RedisDistributedLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
