@@ -11,8 +11,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SentinelService8848 {
+public class SentinelService8401 {
     public static void main(String[] args) {
-        SpringApplication.run(SentinelService8848.class);
+        SpringApplication.run(SentinelService8401.class);
     }
 }
