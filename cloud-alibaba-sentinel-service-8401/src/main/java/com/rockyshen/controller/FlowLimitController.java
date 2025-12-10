@@ -19,4 +19,10 @@ public class FlowLimitController {
     public String testB(){
         return "-----testB";
     }
+
+    @GetMapping("/testC")
+    public String testC(){
+        System.out.println(System.currentTimeMillis() + "-----testC 排队等待");
+        return "-----testC";
+    }
 }
