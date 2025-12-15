@@ -21,6 +21,9 @@
         <module>inventory_service_7777</module>
         <module>inventory_service_8888</module>
         <module>cloud-alibaba-sentinel-service-8401</module>
+        <module>cloud-alibaba-provider-payment-9001</module>
+        <module>cloud-api-common</module>
+        <module>cloud-alibaba-consumer-order-83</module>
     </modules>
 
     <!-- ==================== 版本号统一管理 ==================== -->
