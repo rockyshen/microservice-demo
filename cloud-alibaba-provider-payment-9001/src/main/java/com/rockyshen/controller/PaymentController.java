@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PaymentController {
     @GetMapping("/pay/nacos/get/{orderId}")
-    @SentinelResource(value = "getPayInfoByOrderId", blockHandler = "handlerBlockHandler")
-    public String getPayInfoByOrderId(@PathVariable("orderId") Integer orderId) {
+    @SentinelResource(value = "getPayInfoByOrderId", blockHandler = "handlerBlockHandler")   // 流量控制
+    public String getPayInfoByOrderId(@PathVariable("orderId") String orderId) {
         return "返回值：payId=1024, OrderId="+ orderId;
     }
 
-    public String handlerBlockHander(@PathVariable("orderId") Integer orderId, BlockException e){
+    // 这里是触发流控规则
+    public String handlerBlockHandler(@PathVariable("orderId") String orderId, BlockException e){
         return "getPayInfoByOrderId服务不可用，触发Sentinel流控限制规则";
     }
 }

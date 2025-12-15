@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PayFeignSentinelApiFallBack implements PayFeignSentinelApi {
     @Override
-    public String getPayInfoByOrderId(Integer orderId) {
-        return "feign提供方的服务不可用，FallBack服务降级";
+    public String getPayInfoByOrderId(String orderId) {
+        return "feign提供方的服务宕机了！服务不可用！FallBack服务降级";
     }
 }
