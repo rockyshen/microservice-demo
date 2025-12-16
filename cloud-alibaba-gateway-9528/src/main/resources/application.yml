@@ -1,0 +1,16 @@
+server:
+  port: 9528
+
+spring:
+  application:
+    name: cloud-alibaba-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: pay_routh1                   # 路由id，类似mysql的主键
+          uri: http://localhost:9001       # 受gateway保护的地址
+          predicates:
+            - Path=/pay/**                 # 断言，匹配当前规则的，才会允许通过gateway

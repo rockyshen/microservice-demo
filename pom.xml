@@ -24,6 +24,7 @@
         <module>cloud-alibaba-provider-payment-9001</module>
         <module>cloud-api-common</module>
         <module>cloud-alibaba-consumer-order-83</module>
+        <module>cloud-alibaba-gateway-9528</module>
     </modules>
 
     <!-- ==================== 版本号统一管理 ==================== -->
