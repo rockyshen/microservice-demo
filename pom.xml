@@ -25,6 +25,7 @@
         <module>cloud-api-common</module>
         <module>cloud-alibaba-consumer-order-83</module>
         <module>cloud-alibaba-gateway-9528</module>
+        <module>seata-order-service-2001</module>
     </modules>
 
     <!-- ==================== 版本号统一管理 ==================== -->
@@ -38,6 +39,10 @@
         <spring.cloud.alibaba.version>2021.0.5.0</spring.cloud.alibaba.version>
 
         <!-- 第三方依赖版本 -->
+        <druid.version>1.1.20</druid.version>
+        <mybatis.springboot.version>3.0.2</mybatis.springboot.version>
+        <mybatis.plus.boot.starter>3.5.3.1</mybatis.plus.boot.starter>
+        <mysql.version>8.0.11</mysql.version>
         <hutool.version>5.2.3</hutool.version>
         <lombok.version>1.16.18</lombok.version>
         <springfox.version>2.9.2</springfox.version>
@@ -62,6 +67,30 @@
                 <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!--SpringBoot集成mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.boot.starter}</version>
+                <!--            不用到mybatis,已经集成了-->
+            </dependency>
+            <!--Mysql数据库驱动8 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!--SpringBoot集成druid连接池-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
             </dependency>
 
             <!-- Redis连接池 -->
