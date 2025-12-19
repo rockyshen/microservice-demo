@@ -1,9 +1,9 @@
 server:
-  port: 2001
+  port: 2002
 
 spring:
   application:
-    name: seata-order-service
+    name: seata-storage-service
   cloud:
     nacos:
       discovery:
@@ -11,7 +11,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://118.25.46.207:3307/seata_order
+    url: jdbc:mysql://118.25.46.207:3307/seata_storage
     username: root
     password: AmRI3@n2
 
