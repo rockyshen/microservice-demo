@@ -26,6 +26,8 @@
         <module>cloud-alibaba-consumer-order-83</module>
         <module>cloud-alibaba-gateway-9528</module>
         <module>seata-order-service-2001</module>
+        <module>seata-storage-service-2002</module>
+        <module>seata-account-service-2003</module>
     </modules>
 
     <!-- ==================== 版本号统一管理 ==================== -->

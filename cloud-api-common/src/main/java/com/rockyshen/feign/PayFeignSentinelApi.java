@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
+ * 基于feign的RPC，整合sentinel服务降级
  * 整合open-feign和sentinel，在open-feign层面进行服务熔断、降级
  * @author rockyshen
  * @date 2025/12/15 09:54
@@ -17,4 +18,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface PayFeignSentinelApi {
     @GetMapping("/pay/nacos/get/{orderId}")
     public String getPayInfoByOrderId(@PathVariable("orderId") String orderId);
+
+
 }

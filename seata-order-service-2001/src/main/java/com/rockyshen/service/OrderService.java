@@ -12,5 +12,5 @@ import com.rockyshen.model.Order;
 */
 
 public interface OrderService extends IService<Order> {
-
+    void create(Order order);
 }
