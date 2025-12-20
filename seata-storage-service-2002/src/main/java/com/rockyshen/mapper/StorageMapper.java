@@ -1,7 +1,8 @@
 package com.rockyshen.mapper;
 
-import com.rockyshen.model.Storage;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.rockyshen.model.Storage;
+import org.apache.ibatis.annotations.Param;
 
 /**
 * @author junjie.shen
@@ -10,6 +11,10 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity generator.domain.Storage
 */
 public interface StorageMapper extends BaseMapper<Storage> {
+    /**
+     * 扣减库存
+     */
+    void decrease(@Param("productId") Long productId, @Param("count") Integer count);
 
 }
 

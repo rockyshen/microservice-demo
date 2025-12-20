@@ -9,5 +9,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2025-12-19 11:28:59
 */
 public interface StorageService extends IService<Storage> {
+    /**
+     * 扣减库存
+     */
+    void decrease(Long productId, Integer count);
+
 
 }

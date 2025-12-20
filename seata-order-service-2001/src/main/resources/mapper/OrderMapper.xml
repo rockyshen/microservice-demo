@@ -6,8 +6,8 @@
 
     <resultMap id="BaseResultMap" type="com.rockyshen.model.Order">
             <id property="id" column="id" jdbcType="BIGINT"/>
-            <result property="user_id" column="user_id" jdbcType="BIGINT"/>
-            <result property="product_id" column="product_id" jdbcType="BIGINT"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="productId" column="product_id" jdbcType="BIGINT"/>
             <result property="count" column="count" jdbcType="INTEGER"/>
             <result property="money" column="money" jdbcType="DECIMAL"/>
             <result property="status" column="status" jdbcType="INTEGER"/>

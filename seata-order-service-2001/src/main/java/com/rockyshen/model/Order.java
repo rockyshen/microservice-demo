@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 public class Order implements Serializable {
     /**
-     * 
+     * 主键id
      */
     @TableId(type = IdType.AUTO)
     private Long id;
@@ -23,12 +23,14 @@ public class Order implements Serializable {
     /**
      * 用户id
      */
-    private Long user_id;
+    @TableField("user_id")
+    private Long userId;
 
     /**
      * 产品id
      */
-    private Long product_id;
+    @TableField("product_id")
+    private Long productId;
 
     /**
      * 数量

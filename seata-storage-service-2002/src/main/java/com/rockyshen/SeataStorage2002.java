@@ -1,11 +1,10 @@
 package com.rockyshen;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-
-import javax.swing.*;
 
 /**
  * @author rockyshen
@@ -14,7 +13,7 @@ import javax.swing.*;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-// @MapperScan 是否需要？
+@MapperScan("com.rockyshen.mapper")
 public class SeataStorage2002 {
     public static void main(String[] args) {
         SpringApplication.run(SeataStorage2002.class);

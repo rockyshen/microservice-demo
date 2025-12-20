@@ -15,4 +15,13 @@
     <sql id="Base_Column_List">
         id,product_id,total,used,residue
     </sql>
+
+    <update id="decrease">
+        UPDATE
+            t_storage
+        SET
+            used = used + #{count},
+            residue = residue - #{count}
+        WHERE product_id = #{productId}
+    </update>
 </mapper>
