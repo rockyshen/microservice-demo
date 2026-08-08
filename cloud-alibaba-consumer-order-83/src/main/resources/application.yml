@@ -7,7 +7,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        # 本机未起 Nacos 时用远程；URL 模式 Feign 不依赖服务发现
+        server-addr: 118.25.46.207:8848
+        username: nacos
+        password: nacos
     sentinel:
       transport:
         dashboard: localhost:8080
@@ -17,3 +20,9 @@ spring:
 feign:
   sentinel:
     enabled: true
+
+# 本机启动的 user-center（Feign url 直连，不经 Nacos）
+user-center:
+  base-url: http://127.0.0.1:9010
+  # 与 user-center application-local.yml 中 platform.jwt.internal-service-token 保持一致
+  internal-token: my-biz-platform-internal-token-change-in-production
